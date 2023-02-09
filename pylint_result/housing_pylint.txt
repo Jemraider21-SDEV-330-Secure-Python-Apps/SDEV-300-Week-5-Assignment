@@ -1,0 +1,7 @@
+************* Module housing
+Models/housing.py:9:4: R0913: Too many arguments (8/5) (too-many-arguments)
+Models/housing.py:5:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 7.78/10 (previous run: 7.78/10, +0.00)
+
