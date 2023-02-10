@@ -23,6 +23,6 @@ pylinter(){
 
 # Pylinting files
 pylinter "lab5" "lab5.py"
-pylinter "housing" "Models/housing.py"
-pylinter "popchanges" "Models/popchanges.py"
+pylinter "housing" "Utils/Models/housing.py"
+pylinter "popchanges" "Utils/Models/popchanges.py"
 pylinter "validation" "Utils/Validation/validation.py"
