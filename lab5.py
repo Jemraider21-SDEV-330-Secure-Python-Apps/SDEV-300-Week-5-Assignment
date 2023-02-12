@@ -1,9 +1,10 @@
+"""Main file for the program. Displays statistics for certain subject
+"""
+import numpy as np
+import matplotlib.pyplot as plt
 from Utils.Models.housing import Housing
 from Utils.Models.popchanges import PopChange
 from Utils.Validation.validation import validate_is_int
-import numpy as np
-import matplotlib.pyplot as plt
-
 
 HOUSES: list[Housing] = []
 POPULATION_CHANGES: list[PopChange] = []
@@ -16,32 +17,30 @@ def create_arrays():
     housing_url = "./InputFiles/Housing.csv"
     popchanges_url = "./InputFiles/PopChange.csv"
 
-    housing_file = open(housing_url, "r", encoding="utf-8")
-    for line in housing_file.readlines()[1:]:
-        line_contents: list[str] = line.split(",")
-        age: int = int(line_contents[0])
-        bedrooms: int = int(line_contents[1])
-        year_build: int = int(line_contents[2])
-        num_units: int = int(line_contents[3])
-        rooms: int = int(line_contents[4])
-        weight: float = float(line_contents[5])
-        utility: float = float(line_contents[6])
-        HOUSES.append(Housing(age, bedrooms, year_build,
-                              num_units, rooms, weight, utility))
-    housing_file.close()
+    with open(housing_url, "r", encoding="utf-8") as file:
+        for line in file.readlines()[1:]:
+            line_contents: list[str] = line.split(",")
+            age: int = int(line_contents[0])
+            bedrooms: int = int(line_contents[1])
+            year_build: int = int(line_contents[2])
+            num_units: int = int(line_contents[3])
+            rooms: int = int(line_contents[4])
+            weight: float = float(line_contents[5])
+            utility: float = float(line_contents[6])
+            HOUSES.append(Housing(age, bedrooms, year_build,
+                                  num_units, rooms, weight, utility))
 
-    popchanges_file = open(popchanges_url, "r", encoding="utf-8")
-    for line in popchanges_file.readlines()[1:]:
-        line_contents: list[str] = line.split(",")
-        id: str = line_contents[0]
-        geography: str = line_contents[1]
-        target_geo_id1: str = line_contents[2]
-        target_geo_id2: int = int(line_contents[3])
-        april_1_pop: int = int(line_contents[4])
-        july_1_pop: int = int(line_contents[5])
-        POPULATION_CHANGES.append(PopChange(
-            id, geography, target_geo_id1, target_geo_id2, april_1_pop, july_1_pop))
-    popchanges_file.close()
+    with open(popchanges_url, "r", encoding="utf-8") as file:
+        for line in file.readlines()[1:]:
+            line_contents: list[str] = line.split(",")
+            pop_id: str = line_contents[0]
+            geography: str = line_contents[1]
+            target_geo_id1: str = line_contents[2]
+            target_geo_id2: int = int(line_contents[3])
+            april_1_pop: int = int(line_contents[4])
+            july_1_pop: int = int(line_contents[5])
+            POPULATION_CHANGES.append(PopChange(
+                pop_id, geography, target_geo_id1, target_geo_id2, april_1_pop, july_1_pop))
 
 
 def math(data: list, title: str):

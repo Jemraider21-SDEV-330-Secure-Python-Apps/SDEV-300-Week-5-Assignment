@@ -1,13 +1,6 @@
 ************* Module lab5
-lab5.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-lab5.py:9:0: R0914: Too many local variables (19/15) (too-many-locals)
-lab5.py:34:8: W0622: Redefining built-in 'id' (redefined-builtin)
-lab5.py:16:19: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-lab5.py:31:22: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-lab5.py:34:8: C0103: Variable name "id" doesn't conform to snake_case naming style (invalid-name)
-lab5.py:16:19: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
-lab5.py:31:22: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+lab5.py:13:0: R0914: Too many local variables (18/15) (too-many-locals)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.58/10 (previous run: 7.58/10, +0.00)
+Your code has been rated at 9.92/10 (previous run: 9.62/10, +0.30)
 
