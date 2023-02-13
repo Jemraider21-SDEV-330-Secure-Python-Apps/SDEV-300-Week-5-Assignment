@@ -1,0 +1,8 @@
+************* Module popchange_functions
+Utils/Functions/popchange_functions.py:3:0: E0401: Unable to import 'Utils.Functions.statistics' (import-error)
+Utils/Functions/popchange_functions.py:4:0: E0401: Unable to import 'Utils.Validation.validation' (import-error)
+Utils/Functions/popchange_functions.py:5:0: E0401: Unable to import 'Utils.Models.popchanges' (import-error)
+
+------------------------------------------------------------------
+Your code has been rated at 5.31/10 (previous run: 5.31/10, +0.00)
+

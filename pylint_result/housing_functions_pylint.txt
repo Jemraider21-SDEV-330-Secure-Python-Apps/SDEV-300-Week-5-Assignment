@@ -1,0 +1,8 @@
+************* Module housing_functions
+Utils/Functions/housing_functions.py:3:0: E0401: Unable to import 'Utils.Functions.statistics' (import-error)
+Utils/Functions/housing_functions.py:4:0: E0401: Unable to import 'Utils.Validation.validation' (import-error)
+Utils/Functions/housing_functions.py:5:0: E0401: Unable to import 'Utils.Models.housing' (import-error)
+
+------------------------------------------------------------------
+Your code has been rated at 6.05/10 (previous run: 6.05/10, +0.00)
+

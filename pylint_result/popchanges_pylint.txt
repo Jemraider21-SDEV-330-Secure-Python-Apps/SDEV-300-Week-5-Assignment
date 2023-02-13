@@ -1,10 +1,4 @@
-************* Module popchanges
-Utils/Models/popchanges.py:12:8: C0103: Attribute name "id" doesn't conform to snake_case naming style (invalid-name)
-Utils/Models/popchanges.py:9:23: C0103: Argument name "id" doesn't conform to snake_case naming style (invalid-name)
-Utils/Models/popchanges.py:9:4: R0913: Too many arguments (7/5) (too-many-arguments)
-Utils/Models/popchanges.py:9:23: W0622: Redefining built-in 'id' (redefined-builtin)
-Utils/Models/popchanges.py:5:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
-------------------------------------------------------------------
-Your code has been rated at 3.75/10 (previous run: 3.75/10, +0.00)
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
